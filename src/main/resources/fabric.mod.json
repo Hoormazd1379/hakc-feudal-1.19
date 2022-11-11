@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "hakcfeudal",
+  "version": "${version}",
+
+  "name": "HAKC Feudal",
+  "description": "HAKC Feudal system Mod",
+  "authors": [
+    "Hoormazd"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.hoormazd.hakcfeudal.HakcFeudal"
+    ],
+    "client": [
+      "net.hoormazd.hakcfeudal.HakcFeudalClient"
+    ]
+  },
+  "mixins": [
+    "hakcfeudal.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
